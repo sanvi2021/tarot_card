@@ -1,0 +1,197 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}<title>Tarot Card Reader - Preeti Mutreja</title>{% endblock title %}
+
+
+{% block content %}         <div id="myCarousel" class="carousel slide banner_main" data-ride="carousel">
+    <ol class="carousel-indicators">
+       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+       <li data-target="#myCarousel" data-slide-to="1"></li>
+       <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+       <div class="carousel-item active">
+          <div class="container-fluid">
+             <div class="carousel-caption">
+                <div class="row">
+                   <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                      <div class="text-bg">
+                         <h1>Love Issues or Marraige problems?</h1>
+                         <p>Want to solve Love issues in your life or Marraige related probelms? consult with the expert for remedies and guidence</p>
+                         <a class="read_more" href={% url 'contact.html' %}>Book Now</a>
+                      </div>
+                   </div>
+                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                      <div class="images_box">
+                         <figure><img src="{% static '/images/img2.png' %}"></figure>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="carousel-item">
+          <div class="container-fluid ">
+             <div class="carousel-caption">
+                <div class="row">
+                   <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                      <div class="text-bg">
+                        <h1>Career or Job problems?</h1>
+                         <p>Consult the expert for career of job related problems. Get remedies to solve the hurdles and grow ahead in life.
+                         </p>
+                         <a class="read_more" href={% url 'contact.html' %}>Book Now</a>
+                      </div>
+                   </div>
+                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                      <div class="images_box">
+                         <figure><img src="{% static '/images/img2.png' %}"></figure>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+       <div class="carousel-item">
+          <div class="container-fluid">
+             <div class="carousel-caption ">
+                <div class="row">
+                   <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12">
+                      <div class="text-bg">
+                         <h1>Health issues?</h1>
+                        <p>Get positive vibes and energies around you to boost your mental health and confidence. Consult the Expert for advice and remedies
+                        </p>
+                        <a class="read_more" href={% url 'contact.html' %}>Book Now</a>
+                      </div>
+                   </div>
+                   <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                      <div class="images_box">
+                         <figure><img src="{% static '/images/img2.png' %}"></figure>
+                      </div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+    <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+    </a>
+ </div>
+ 
+ 
+ <!-- end banner -->
+ <!-- about -->
+ <div id="about"  class="about">
+    <div class="container-fluid">
+       <div class="row d_flex">
+          <div class="col-md-5">
+             <div class="about_img">
+                <figure><img src="{% static '/images/about_img.jpg' %}" alt="#"/></figure>
+             </div>
+          </div>
+          <div class="col-md-7">
+             <div class="titlepage">
+                <h2>About <span class="blu">Tarot Reader</span></h2>
+                <p>Certified and expert Tarot reader <strong>Preeti Mutreja</strong> with more than 4 years of experience in healing, prediction and remedies to problems.
+                Discovering and enhancement of positive energies and vibes to comfort the people. Giving personal guidence on 1 to 1 session for predictions and solution to your past, present and future.
+             generate positive energies around and boost self confidence through psychic reading and solutions </p>
+                <a class="read_more" href={% url 'about.html' %}>Read More</a>
+             </div>
+          </div>
+       </div>
+    </div>
+ </div>
+ 
+ <!-- end about -->
+ <!-- choose  section -->
+ 
+ 
+ <div class = "container-fluid">
+    <div class ="col-md-flex">
+       <div class ="titlepage">
+          <center>
+          <h2> Services <span class="blu"> Offered </span></h2></center>
+       </div>
+    </div>
+    <div class = "container">
+       <div class="card-deck">
+          <div class="card">
+          <img src="https://unsplash.it/500/500/" class="card-img-top" alt="...">
+          <div class="card-body">
+             <h1 class="card-title"><centre>Basic Deep Prediction</center></h1>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer"><center>
+            <a class="read_more" href={% url 'contact.html' %}>Book Now</a></center>
+          </div>
+          </div>
+          <div class="card">
+          <img src="https://unsplash.it/500/500/" class="card-img-top" alt="...">
+          <div class="card-body">
+             <h1 class="card-title"><center>Bronze Prediction</center></h1>
+             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer"><center>
+            <a class="read_more" href={% url 'contact.html' %}>Book Now</a></center>
+          </div>
+          </div>
+          <div class="card">
+          <img src="https://unsplash.it/500/500/" class="card-img-top" alt="...">
+          <div class="card-body">
+             <h1 class="card-title"><center>Gold Deep Prediction</center></h1>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer"><center>
+            <a class="read_more" href={% url 'contact.html' %}>Book Now</a></center>
+          </div>
+          </div>
+       </div>
+       <br>
+       <div class="card-deck">
+          <div class="card">
+          <img src="https://unsplash.it/500/500/" class="card-img-top" alt="...">
+          <div class="card-body">
+             <h1 class="card-title"><centre>Candle Wax kesar Prediction with Remedy</center></h1>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer"><center>
+            <a class="read_more" href={% url 'contact.html' %}>Book Now</a></center>
+          </div>
+          </div>
+          <div class="card">
+          <img src="https://unsplash.it/500/500/" class="card-img-top" alt="...">
+          <div class="card-body">
+             <h1 class="card-title"><center>Angels Prediction</center></h1>
+             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer"><center>
+            <a class="read_more" href={% url 'contact.html' %}>Book Now</a></center>
+          </div>
+          </div>
+          <div class="card">
+          <img src="https://unsplash.it/500/500/" class="card-img-top" alt="...">
+          <div class="card-body">
+             <h1 class="card-title"><center>Platinum Deep Prediction</center></h1>
+             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer"><center>
+            <a class="read_more" href={% url 'contact.html' %}>Book Now</a></center>
+          </div>
+          </div>
+       </div>
+    </div>
+ </div>
+
+
+
+ <!-- work -->
+ <div id="work"  class="work">
+ </div>
+ <!-- end work -->
+ <!-- request -->
+ 
+ {% include 'form.html' %}
+ {% endblock content %}

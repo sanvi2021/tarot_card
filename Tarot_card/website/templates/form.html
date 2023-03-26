@@ -1,0 +1,32 @@
+{% include 'messages.html' %}
+<div id="contact" class="request">   
+    <div class="container">      
+       <div class="row">
+          <div class="col-md-12">
+             <div class="titlepage">
+                <h2>Request <span class="white">A call Back</span></h2>
+             </div>
+          </div>
+       </div>
+       <div class="row">
+          <div class="col-md-6">
+             <form id="request" class="main_form" method = "POST" action = " ">
+                <div class="row">
+                   <div class="col-md-12 ">
+                    {% csrf_token %}
+                    {% for field in form %}
+                    {{ field }}
+                {% endfor %} 
+                   </div>                   
+                   <div class="col-md-12">
+                    <button class="send_btn">Send</button>
+                 </div>
+                </div>
+             </form>
+          </div>
+          <div class="col-md-6">
+             <div id="map"></div>
+          </div>
+       </div>
+    </div>
+ </div>
